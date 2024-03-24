@@ -3,7 +3,7 @@ var router = express.Router();
 var controller=require("../controllers/userController");
 /* GET users listing. */
 // router.route("/").get(controller.getUser);
-router.route('/new')
+router.route('/')
   .get(controller.handelForm)
   .post(controller.handelPost);
 module.exports = router;

@@ -1,23 +1,3 @@
-// const messages=require("../data/messages");
-// exports.handelForm=(req,res)=>{
-//     res.render("form",{title:"New Messages"});
-// };
-// exports.handelPost=(req,res)=>{
-//     const user=req.body.author;
-//     const  messageText=req.body.message;
-//     const newMessage = {
-//         text: messageText,
-//         user: author,
-//         added: new Date()
-//     };
-
-//     // Add the new message to the messages array
-//     messages.push(newMessage);
-//     res.redirect("/");
-// };
-// exports.getUser=(req,res)=>{
-//     res.send("respond with a resource")
-//   };
 const messages = require("../data/messages");
 
 exports.handelForm = (req, res) => {
