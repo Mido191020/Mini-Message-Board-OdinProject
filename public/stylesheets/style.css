@@ -1,8 +1,58 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0; /* Change this to the color you want */
 }
 
 a {
   color: #00B7FF;
 }
+
+.form-block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type='text'],
+textarea {
+  width: calc(100% - 22px); /* Adjusted width for input and textarea */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Added margin bottom to create spacing between inputs */
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+.btn-send {
+  background-color: #007bff; /* Change this to the color you want */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  background-color: #0056b3; /* Change this to the hover color you want */
+}
+
