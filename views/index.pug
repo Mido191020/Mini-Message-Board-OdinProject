@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 welcome 
+  each val in messages
+    div.message
+      p.messagetext #{val.text}
+      p.userstamp from #{val.user}
+      p.timestamp added #{val.added}
+  // Button to navigate to the new message form
+  a(href="/new")
+    button(type="button") Send Message
