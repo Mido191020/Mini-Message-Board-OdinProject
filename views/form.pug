@@ -1,0 +1,64 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p Enter a new message
+
+//-   // CSS styling for form and labels
+//-   style.
+//-     .form-block {
+//-       max-width: 600px;
+//-       margin: 0 auto;
+//-     }
+//-     .form-group {
+//-       margin-bottom: 20px;
+//-     }
+//-     label {
+//-       font-weight: bold;
+//-       display: block;
+//-     }
+//-     input[type='text'],
+//-     textarea {
+//-       width: 100%;
+//-       padding: 10px;
+//-       border: 1px solid #ccc;
+//-       border-radius: 5px;
+//-     }
+//-     button[type='submit'] {
+//-       padding: 10px 20px;
+//-       background-color: #007bff;
+//-       color: #fff;
+//-       border: none;
+//-       border-radius: 5px;
+//-       cursor: pointer;
+//-     }
+//-     button[type='submit']:hover {
+//-       background-color: #0056b3;
+//-     }
+
+//-   div.form-block
+//-     form(action="/new", method="post")
+//-       div.form-group
+//-         label(for='name') Name:
+//-         input#name.form-control(type='text', placeholder='Enter your name', name='name')
+//-       div.form-group
+//-         label(for='message') Message:
+//-         textarea#message.form-control(placeholder='Enter your message', name='message', rows='5')
+//-       button.btn.btn-primary(type="submit", name="submit") Submit
+
+
+extends layout
+
+block content
+  h1= title
+  p Enter a new message
+
+  div.form-block
+    form(action="/new", method="post")
+      div.form-group
+        label(for='name') Name:
+        input#name.form-control(type='text', placeholder='name' name='name')
+      div.form-group
+        label(for='message') Message:
+        textarea#message.form-control(placeholder='message' name='message', rows='5')
+      button.btn.btn-primary(type="submit", name="submit") Submit
